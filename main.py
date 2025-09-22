@@ -1,0 +1,3 @@
+'''
+résolution des fourmilières.
+'''
