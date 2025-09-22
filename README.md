@@ -1,4 +1,4 @@
-# uneviedefourmi
+# Une vie de fourmi
 Algorithmique, python, graphs, NetworkX
 
 ## problématique
