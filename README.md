@@ -8,7 +8,7 @@ Représente des relations entre des élémentsSe compose de zéro ou une arrrêt
 
 **voisins**
 2 sommets sont voisins s'il sont relié par une arrête
-[voisin](img/voisins.png)
+![voisin](img/voisins.png)
 
 **degre**
 Nombre de voisin d'un sommet
@@ -24,27 +24,27 @@ etc...
 chemein dont les 2 extremité sont relié
 (boucle)
 
-[cycle](img/cycle.png)
-[cycle](img/cycle_3.png)
-[cycle](img/cycle_6.png)
+![cycle](img/cycle.png)
+![cycle](img/cycle_3.png)
+![cycle](img/cycle_6.png)
 
 
 **Graphe complet**
 contient toutes les arrêtes possibles entre tous les sommets
 
-[complet](img/graphe_complet.png)
+![complet](img/graphe_complet.png)
 
 **Graphe connexe**
 Pour tout u et vle graphe contient un chemin entre u et v
 
-[Graphe non connexe](img/graphe_non_convexe.png)
+![Graphe non connexe](img/graphe_non_convexe.png)
 
 **arbre**
 graphe connexe et sans cycle
 
-[arbre](img/arbre.png)
-[arbre](img/arbre_etoile.png)
-[arbre](img/arbre_chemin.png)
+![arbre](img/arbre.png)
+![arbre](img/arbre_etoile.png)
+![arbre](img/arbre_chemin.png)
 
 ## problématique
 
