@@ -48,10 +48,20 @@ class AntNest:
         return f"AntNest( antnest={self.name}, ants={self.ants}, rooms={self.rooms}, tubes={self.tubes})"
 
 
-# exemple d’utilisation
+# exemple d’utilisation - fourmilière 1
 f1 = AntNest("fourmilière 1", 2, {1: 1, 2: 1}, ['v-s1','v-s2', 's1-d', 's2-d'] )
-
 print(f1)  # Appelle automatiquement __str__
+
+# fourmilière 4
+edge_list_4 = [(3,4), ("v",1), (1,2), (2,4), (4,5) ,(5,"d"), (4,6), (6,"d"), (1,3)]
+
+G = nx.Graph()
+G.add_edges_from(edge_list_4)
+nx.draw(G, with_labels=True)
+plt.show()
+
+
+
 
 #  Ci dessous, Chat GPT A DECORTIQUER
 def load_antnest_from_txt(filepath: str) -> AntNest:
@@ -76,6 +86,6 @@ def load_antnest_from_txt(filepath: str) -> AntNest:
     return AntNest(ants, rooms, tubes)
 
 # Exemple d’utilisation
-f5 = load_antnest_from_txt("fourmilieres/fourmiliere_quatre.txt")
-print(f5)
+# f5 = load_antnest_from_txt("fourmilieres/fourmiliere_quatre.txt")
+# print(f5)
 
