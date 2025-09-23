@@ -8,6 +8,10 @@ Représente des relations entre des éléments (sommets)
 Arête = relation entre 2 sommets
 Se compose de zéro ou une arête entre chaque sommets
 
+|Anglais|Français|
+|-|-|
+|node | sommet|
+|edge | arête|
 
 **voisins**
 2 sommets sont voisins s'il sont relié par une arête
@@ -81,6 +85,11 @@ fourmilière, étape par étape.
 
 
 ## les solutions apportées
+
+````shell
+pip install networkx
+````
+
 [Tutoriel NetworkX](https://networkx.org/documentation/stable/tutorial.html)
 
 [Matrice d'adjacence](https://people.revoledu.com/kardi/tutorial/GraphTheory/Adjacency-Matrix.html)
