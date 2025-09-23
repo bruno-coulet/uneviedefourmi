@@ -5,7 +5,7 @@ résolution des fourmilières.
 import networkx as nx
 import matplotlib.pyplot as plt
 
-#  undirefted graph
+#  undirected graph
 G = nx.Graph()
 #  directed graph : de A vers B versus de B vers A
 G = nx.DiGraph()
@@ -52,7 +52,7 @@ class AntNest:
 f1 = AntNest("fourmilière 1", 2, {1: 1, 2: 1}, ['v-s1','v-s2', 's1-d', 's2-d'] )
 print(f1)  # Appelle automatiquement __str__
 
-# fourmilière 4
+# fourmilière 4 COMMENT ON GERE LES FORMIS ET LES CAPACITES DES SALLES ?
 edge_list_4 = [(3,4), ("v",1), (1,2), (2,4), (4,5) ,(5,"d"), (4,6), (6,"d"), (1,3)]
 
 G = nx.Graph()
