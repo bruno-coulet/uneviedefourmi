@@ -16,7 +16,6 @@ G.add_edge('A', 'B')
 
 class AntNest:
 
-
     def __init__(self, name : str, ants : int, rooms : dict[int, int], tubes : list[tuple[str, str]]):
         '''fonction d'initialisation d'une fourmilière avec :
         - le nom de la fourmilière
@@ -39,13 +38,44 @@ class AntNest:
         )
     
     def __repr__(self):
-        return f"AntNest(ants={self.ants}, rooms={self.rooms}, tubes={self.tubes})"
+        '''
+        représentation officielle d’un objet
+        est censée être non ambiguë et utile pour les développeurs
+        méthode spéciale appelée automatiquement avec : repr(obj)
+        ou dans le shell
+        '''
+
+        return f"AntNest( antnest={self.name}, ants={self.ants}, rooms={self.rooms}, tubes={self.tubes})"
 
 
-
+# exemple d’utilisation
 f1 = AntNest("fourmilière 1", 2, {1: 1, 2: 1}, ['v-s1','v-s2', 's1-d', 's2-d'] )
 
-
-
 print(f1)  # Appelle automatiquement __str__
+
+#  Ci dessous, Chat GPT A DECORTIQUER
+def load_antnest_from_txt(filepath: str) -> AntNest:
+    antNestName = ""
+    ants = 0
+    rooms = []
+    tubes = []
+
+    with open(filepath, "r") as f:
+        for line in f:
+            line = line.strip()
+            if not line:  # sauter les lignes vides
+                continue
+            if line.startswith("f="):
+                ants = int(line.split("=")[1])
+            elif "-" in line:
+                a, b = [s.strip() for s in line.split("-")]
+                tubes.append((a, b))
+            else:
+                rooms.append(line)
+
+    return AntNest(ants, rooms, tubes)
+
+# Exemple d’utilisation
+f5 = load_antnest_from_txt("fourmilieres/fourmiliere_quatre.txt")
+print(f5)
 
