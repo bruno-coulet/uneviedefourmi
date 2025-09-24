@@ -20,7 +20,6 @@ def generate_antNest (file):
                 tubes.append((a, b))
             elif "{" in line and "}" in line:
                 # extrait les capacités des salles
-                line = line.replace("{", "").replace("}", "")
                 for room in line.split(","):
                     room_id, capacity = [s.strip() for s in room.split(":")]
                     rooms.append((int(room_id), int(capacity)))

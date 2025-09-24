@@ -15,7 +15,7 @@ Se compose de zéro ou une arête entre chaque sommets
 
 **voisins**
 2 sommets sont voisins s'il sont relié par une arête
-![voisin](img/voisins.png)
+<img src=img/voisins.png width=400>
 
 **degre**
 Nombre de voisin d'un sommet
@@ -31,28 +31,28 @@ etc...
 chemein dont les 2 extremité sont relié
 (boucle)
 
-![cycle](img/cycle.png)
-![cycle](img/cycle_3.png)
-![cycle](img/cycle_6.png)
+<img src=img/cycle.png width=400>
+<img src=img/cycle_3.png width=400>
+<img src=img/cycle_6.png width=400>
 
 
 **Graphe complet**
 contient toutes les arêtes possibles entre tous les sommets
 
-![complet](img/graphe_complet.png)
+<img src=img/graphe_complet.png width=400>
 
 **Graphe connexe**
 Pour tout u et vle graphe contient un chemin entre u et v
 
-![Graphe non connexe](img/graphe_non_convexe.png)
+<img src=img/graphe_non_convexe.png width=400>
 
 **arbre**
 graphe connexe et sans cycle
 
-![arbre](img/arbre.png)
-![arbre](img/arbre_etoile.png)
-![arbre](img/arbre_chemin.png)
-![non arbre](img/non_arbre.png)
+<img src=img/arbre.png width=300>
+<img src=img/arbre_etoile.png width=300>
+<img src=img/arbre_chemin.png width=300>
+<img src=img/non_arbre.png width=300>
 
 **Relation entre connexité et arbre**
 Un graphe est connexe si et seulement si il contient un arbre couvrant
@@ -91,6 +91,20 @@ pip install networkx
 ````
 
 [Tutoriel NetworkX](https://networkx.org/documentation/stable/tutorial.html)
+
+**Undirected graph**
+```python
+G = nx.Graph()
+```
+**Directed graph : de A vers B versus de B vers A**
+```python
+G = nx.DiGraph()
+```
+**Ajouter une arête qui va de A à B**
+cela crée aussi les sommets s'ils n'existent pas encore
+```python
+G.add_edge('A', 'B')
+```
 
 [Matrice d'adjacence](https://people.revoledu.com/kardi/tutorial/GraphTheory/Adjacency-Matrix.html)
 
