@@ -40,8 +40,10 @@ class AntNest:
 
         return f"AntNest( antnest={self.name}, ants={self.ants}, rooms={self.rooms}, tubes={self.tubes})"
 
-ant_nests_parameters = []
+ant_nestes_objects = []
 
+
+# Crée une liste d'objets fourmilières à partir des fichiers dans le dossier "fourmilieres"
 for file in os.listdir("fourmilieres"):
     if file.endswith(".txt"):
         # chemin complet
@@ -52,10 +54,10 @@ for file in os.listdir("fourmilieres"):
         antNest_name = f"fourmilière {os.path.splitext(antNest_name)[0]}"
         # Crée l'objet
         nest = AntNest(antNest_name, ants, rooms_dict, tubes)
-        ant_nests_parameters.append(nest)
+        ant_nestes_objects.append(nest)
 
 # Affichage de toutes les fourmilières
-for nest in ant_nests_parameters:
+for nest in ant_nestes_objects:
     # print(nest)
     G = nx.Graph()
     G.add_edges_from(nest.tubes)
