@@ -69,9 +69,9 @@ for nest in ant_nest_objects:
     plt.show()
 
 
-'''afficher l’ensemble des étapes nécessaires comme cela :
+'''afficher l’ensemble des étapes nécessaires comme cela :'''
 +++ 𝐸1+++
-𝑓1 − 𝑆𝑣 − 𝑆1
+# 𝑓1 − 𝑆𝑣 − 𝑆
 𝑓2 − 𝑆𝑣 − 𝑆2
 +++𝐸2+++
 𝑓1 − 𝑆1 − 𝑆𝑑
@@ -79,7 +79,8 @@ for nest in ant_nest_objects:
 𝑓3 − 𝑆v − 𝑆1
 +++ 𝐸3+++
 𝑓3 − 𝑆1 − 𝑆𝑑
-'''
+
+
 
 
 

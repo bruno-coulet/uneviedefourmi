@@ -15,7 +15,7 @@ Se compose de zéro ou une arête entre chaque sommets
 
 **voisins**
 2 sommets sont voisins s'il sont relié par une arête
-<img src=img/voisins.png width=400>
+<img src=img/voisins.png width=300>
 
 **degre**
 Nombre de voisin d'un sommet
@@ -31,15 +31,15 @@ etc...
 chemein dont les 2 extremité sont relié
 (boucle)
 
-<img src=img/cycle.png width=400>
-<img src=img/cycle_3.png width=400>
-<img src=img/cycle_6.png width=400>
+||||
+|-|-|-|
+|<img src=img/cycle.png width=200>|<img src=img/cycle_3.png width=200>|<img src=img/cycle_6.png width=200>|
 
 
 **Graphe complet**
 contient toutes les arêtes possibles entre tous les sommets
 
-<img src=img/graphe_complet.png width=400>
+<img src=img/graphe_complet.png width=300>
 
 **Graphe connexe**
 Pour tout u et vle graphe contient un chemin entre u et v
@@ -70,15 +70,15 @@ librairie/module de votre choix.
 ➔ afficher l’ensemble des étapes nécessaires au déplacement des
 fourmis, comme montré ici :
 
-+++ E1+++
-f1 − Sv − S1
-f2 − Sv − S2
-+++E2+++
-f1 − S1 − Sd
-f2 − S2 − Sd
-f3 − Sv − S1
-+++ E3+++
-f3 − S1 − Sd
++++ E1+++<br>
+f1 − Sv − S1<br>
+f2 − Sv − S2<br>
++++E2+++<br>
+f1 − S1 − Sd<br>
+f2 − S2 − Sd<br>
+f3 − Sv − S1<br>
++++ E3+++<br>
+f3 − S1 − Sd<br>
 
 ➔ représenter par un graphique le déplacement des fourmis au sein de la
 fourmilière, étape par étape.
@@ -113,24 +113,45 @@ G.add_edges_from(nest.tubes)
 
 ### Chemins
 
-`nx.shortest_path(G, source, target)` → donne le plus court chemin entre deux salles.
+```python
+nx.shortest_path(G, source, target)
+```
+donne le plus court chemin entre deux salles
 
-`nx.all_simple_paths(G, source, target) `→ donne tous les chemins simples (sans cycle).
 
-`nx.dijkstra_path(G, source, target, weight="poids")` → si tu veux modéliser des longueurs ou coûts.
+```python
+nx.all_simple_paths(G, source, target)
+```
+donne tous les chemins simples (sans cycle)
+
+
+```python
+nx.dijkstra_path(G, source, target, weight="poids")
+```
+Modélise des longueurs ou coûts
+
 
 ### Accessibilité / connectivité
 
-`nx.has_path(G, u, v)` → savoir si une fourmi peut aller de u à v.
+```python
+nx.has_path(G, u, v)
+```
+Savoir si une fourmi peut aller de u à v.
 
-`nx.connected_components(G)` → pour détecter les parties isolées.
+```python
+nx.connected_components(G)
+```
+Détecte les parties isolées
 
 ### Organisation des déplacements étape par étape
 NetworkX peut planifier :
 
 À E1, chaque fourmi part d’un sommet source (Sv par exemple).
 
-Calcule les chemins cibles avec `nx.shortest_path`.
+Calcule les chemins cibles avec
+```python
+nx.shortest_path
+```
 
 Avance d’un sommet à la fois → simulation.
 
