@@ -7,6 +7,10 @@ import matplotlib.pyplot as plt
 import os
 from utils import generate_antNest
 
+
+''' représenter la fourmilière sous forme de graphe en utilisant la
+librairie/module de votre choix'''
+
 class AntNest:
 
     def __init__(self, name : str, ants : int, rooms : dict['str', int], tubes : list[tuple[str, str]]):
@@ -65,26 +69,19 @@ for nest in ant_nest_objects:
     plt.show()
 
 
-# f1 = generate_antNest("fourmilieres/fourmiliere_un.txt")
-# f2 = generate_antNest("fourmilieres/fourmiliere_deux.txt")
-# f3 = generate_antNest("fourmilieres/fourmiliere_trois.txt")
-# f4 = generate_antNest("fourmilieres/fourmiliere_quatre.txt")
-# f5 = generate_antNest("fourmilieres/fourmiliere_cinq.txt")
+'''afficher l’ensemble des étapes nécessaires comme cela :
++++ 𝐸1+++
+𝑓1 − 𝑆𝑣 − 𝑆1
+𝑓2 − 𝑆𝑣 − 𝑆2
++++𝐸2+++
+𝑓1 − 𝑆1 − 𝑆𝑑
+𝑓2 − 𝑆2 − 𝑆𝑑
+𝑓3 − 𝑆v − 𝑆1
++++ 𝐸3+++
+𝑓3 − 𝑆1 − 𝑆𝑑
+'''
 
 
-# F5 = AntNest(*f5)
-# print(F5)
-
-
-# # Exemple d’utilisation - fourmilière 1
-# f1 = AntNest("fourmilière 1", 2, {1: 1, 2: 1}, ['v-s1','v-s2', 's1-d', 's2-d'] )
-# print(f1)  # Appelle automatiquement __str__
-
-
-# G = nx.Graph()
-# G.add_edges_from(edge_list_4)
-# nx.draw(G, with_labels=True)
-# plt.show()
 
 
 

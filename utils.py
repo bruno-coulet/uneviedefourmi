@@ -17,7 +17,7 @@ def generate_antNest(file):
 
             # nombre de fourmis
             if line.startswith("f="):
-                ants = int(line.split("=", 1)[1])
+                ants = int(line.split("=")[1])
 
 
             # tunnels

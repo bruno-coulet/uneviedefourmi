@@ -106,6 +106,34 @@ cela crée aussi les sommets s'ils n'existent pas encore
 G.add_edge('A', 'B')
 ```
 
+On peut dessiner un graph directement à partir d'une liste d'arêtes (tunnels), c'est à dire une liste de tuples  (origine, destination)
+```python
+G.add_edges_from(nest.tubes)
+```
+
+### Chemins
+
+`nx.shortest_path(G, source, target)` → donne le plus court chemin entre deux salles.
+
+`nx.all_simple_paths(G, source, target) `→ donne tous les chemins simples (sans cycle).
+
+`nx.dijkstra_path(G, source, target, weight="poids")` → si tu veux modéliser des longueurs ou coûts.
+
+### Accessibilité / connectivité
+
+`nx.has_path(G, u, v)` → savoir si une fourmi peut aller de u à v.
+
+`nx.connected_components(G)` → pour détecter les parties isolées.
+
+### Organisation des déplacements étape par étape
+NetworkX peut planifier :
+
+À E1, chaque fourmi part d’un sommet source (Sv par exemple).
+
+Calcule les chemins cibles avec `nx.shortest_path`.
+
+Avance d’un sommet à la fois → simulation.
+
 [Matrice d'adjacence](https://people.revoledu.com/kardi/tutorial/GraphTheory/Adjacency-Matrix.html)
 
 ## conclusion
