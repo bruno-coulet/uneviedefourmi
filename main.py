@@ -1,48 +1,15 @@
 '''
 résolution des fourmilières.
 '''
-
 import networkx as nx
 import matplotlib.pyplot as plt
 import os
-from utils import generate_antNest
+from utils import generate_antNest, AntNest
 
 
 ''' représenter la fourmilière sous forme de graphe en utilisant la
 librairie/module de votre choix'''
 
-class AntNest:
-
-    def __init__(self, name : str, ants : int, rooms : dict['str', int], tubes : list[tuple[str, str]]):
-        '''fonction d'initialisation d'une fourmilière avec :
-        - le nom de la fourmilière
-        - le nombre de fourmis
-        - les salles (dict: id -> capacité)
-        - les tunnels (list: tuple: origine -> destination)
-        '''
-        self.name=name
-        self.ants=ants
-        self.rooms=rooms
-        self.tubes=tubes
-
-    def __str__(self) -> str:
-        '''représentation textuelle de la fourmilière'''
-        return (
-            f"{self.name}\n"
-            f"- Fourmis : {self.ants}\n"
-            f"- Salles  : {len(self.rooms)} ({self.rooms})\n"
-            f"- Tunnels : {len(self.tubes)} {self.tubes}"
-        )
-    
-    def __repr__(self):
-        '''
-        représentation officielle d’un objet
-        est censée être non ambiguë et utile pour les développeurs
-        méthode spéciale appelée automatiquement avec : repr(obj)
-        ou dans le shell
-        '''
-
-        return f"AntNest( antnest={self.name}, ants={self.ants}, rooms={self.rooms}, tubes={self.tubes})"
 
 ant_nest_objects = []
 
@@ -69,7 +36,7 @@ for nest in ant_nest_objects:
     plt.show()
 
 
-'''afficher l’ensemble des étapes nécessaires comme cela :'''
+'''afficher l’ensemble des étapes nécessaires comme cela :
 +++ 𝐸1+++
 # 𝑓1 − 𝑆𝑣 − 𝑆
 𝑓2 − 𝑆𝑣 − 𝑆2
@@ -79,7 +46,7 @@ for nest in ant_nest_objects:
 𝑓3 − 𝑆v − 𝑆1
 +++ 𝐸3+++
 𝑓3 − 𝑆1 − 𝑆𝑑
-
+'''
 
 
 
@@ -93,4 +60,3 @@ for nest in ant_nest_objects:
 # Exemple d’utilisation
 # f5 = load_antnest_from_txt("fourmilieres/fourmiliere_quatre.txt")
 # print(f5)
-

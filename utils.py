@@ -1,5 +1,38 @@
 import os
 
+class AntNest:
+
+    def __init__(self, name : str, ants : int, rooms : dict['str', int], tubes : list[tuple[str, str]]):
+        '''fonction d'initialisation d'une fourmilière avec :
+        - le nom de la fourmilière
+        - le nombre de fourmis
+        - les salles (dict: id -> capacité)
+        - les tunnels (list: tuple: origine -> destination)
+        '''
+        self.name=name
+        self.ants=ants
+        self.rooms=rooms
+        self.tubes=tubes
+
+    def __str__(self) -> str:
+        '''représentation textuelle de la fourmilière'''
+        return (
+            f"{self.name}\n"
+            f"- Fourmis : {self.ants}\n"
+            f"- Salles  : {len(self.rooms)} ({self.rooms})\n"
+            f"- Tunnels : {len(self.tubes)} {self.tubes}"
+        )
+    
+    def __repr__(self):
+        '''
+        représentation officielle d’un objet
+        est censée être non ambiguë et utile pour les développeurs
+        méthode spéciale appelée automatiquement avec : repr(obj)
+        ou dans le shell
+        '''
+
+        return f"AntNest( antnest={self.name}, ants={self.ants}, rooms={self.rooms}, tubes={self.tubes})"
+
 def generate_antNest(file):
     # extrait le deuxième élément du nom de fichier
     basename = os.path.basename(file)
