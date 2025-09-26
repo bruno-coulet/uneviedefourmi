@@ -2,7 +2,7 @@
 Algorithmique, python, graphs, NetworkX
 
 
-## Veille sur les **graphes**
+## Veille sur les graphes
 
 Représente des relations entre des éléments (sommets)
 Arête = relation entre 2 sommets
@@ -13,52 +13,52 @@ Se compose de zéro ou une arête entre chaque sommets
 |node | sommet|
 |edge | arête|
 
-**voisins**
+#### voisins
 2 sommets sont voisins s'il sont relié par une arête
-![voisin](img/voisins.png)
+<img src=img/voisins.png width=300>
 
-**degre**
+#### degre
 Nombre de voisin d'un sommet
 deg(sommet)=3 le sommet à 3 voisins
 
-**chemin**
+#### chemin
 nombre d'arêtes qui relient 2 sommet
 1 arête : chemin de longueur 1
 2 arêtes : chemin de longueur 2
 etc...
 
-**cycle**
-chemein dont les 2 extremité sont relié
+#### cycle
+chemin dont les 2 extremités sont reliées
 (boucle)
 
-![cycle](img/cycle.png)
-![cycle](img/cycle_3.png)
-![cycle](img/cycle_6.png)
+||||
+|-|-|-|
+|<img src=img/cycle.png width=200>|<img src=img/cycle_3.png width=200>|<img src=img/cycle_6.png width=200>|
 
 
-**Graphe complet**
+#### Graphe complet
 contient toutes les arêtes possibles entre tous les sommets
 
-![complet](img/graphe_complet.png)
+<img src=img/graphe_complet.png width=300>
 
-**Graphe connexe**
-Pour tout u et vle graphe contient un chemin entre u et v
+#### Graphe connexe
+Pour tout **u** et **v**, le graphe contient un chemin entre **u** et **v**
+Ci dessous, 2 graphes connexe, mais l'ensemble n'est pas connexe
+<img src=img/graphe_non_convexe.png width=300>
 
-![Graphe non connexe](img/graphe_non_convexe.png)
-
-**arbre**
+#### arbre
 graphe connexe et sans cycle
+||||
+|-|-|-|
+|<img src=img/arbre.png width=150>|<img src=img/arbre_etoile.png width=150>|<img src=img/arbre_chemin.png width=150>|
 
-![arbre](img/arbre.png)
-![arbre](img/arbre_etoile.png)
-![arbre](img/arbre_chemin.png)
-![non arbre](img/non_arbre.png)
+<img src=img/non_arbre.png width=150>
 
-**Relation entre connexité et arbre**
+#### Relation entre connexité et arbre
 Un graphe est connexe si et seulement si il contient un arbre couvrant
 cad que si on supprime certain arête, on obtient un arbre
 
-**Somme des degrés**
+#### Somme des degrés
 En général :
 Somme des degrés = 2 * le nombre d'arêtes du graphe
 
@@ -70,15 +70,15 @@ librairie/module de votre choix.
 ➔ afficher l’ensemble des étapes nécessaires au déplacement des
 fourmis, comme montré ici :
 
-+++ E1+++
-f1 − Sv − S1
-f2 − Sv − S2
-+++E2+++
-f1 − S1 − Sd
-f2 − S2 − Sd
-f3 − Sv − S1
-+++ E3+++
-f3 − S1 − Sd
++++ E1+++<br>
+f1 − Sv − S1<br>
+f2 − Sv − S2<br>
++++E2+++<br>
+f1 − S1 − Sd<br>
+f2 − S2 − Sd<br>
+f3 − Sv − S1<br>
++++ E3+++<br>
+f3 − S1 − Sd<br>
 
 ➔ représenter par un graphique le déplacement des fourmis au sein de la
 fourmilière, étape par étape.
