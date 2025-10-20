@@ -4,7 +4,7 @@ Algorithmique, python, graphs, NetworkX
 
 ## Veille sur les graphes
 
-Représente des relations entre des éléments (sommets)
+Un graph représente des relations entre des éléments (sommets)
 Arête = relation entre 2 sommets
 Se compose de zéro ou une arête entre chaque sommets
 
@@ -22,9 +22,11 @@ Nombre de voisin d'un sommet
 deg(sommet)=3 le sommet à 3 voisins
 
 #### chemin
-nombre d'arêtes qui relient 2 sommet
-1 arête : chemin de longueur 1
-2 arêtes : chemin de longueur 2
+nombre d'arêtes qui relient 2 sommets
+| | |
+|-|-|
+|1 arête | chemin de longueur 1|
+|2 arêtes | chemin de longueur 2|
 etc...
 
 #### cycle
@@ -43,7 +45,7 @@ contient toutes les arêtes possibles entre tous les sommets
 
 #### Graphe connexe
 Pour tout **u** et **v**, le graphe contient un chemin entre **u** et **v**
-Ci dessous, 2 graphes connexe, mais l'ensemble n'est pas connexe
+Ci dessous, 2 graphes connexes, mais l'ensemble n'est pas connexe
 <img src=img/graphe_non_convexe.png width=300>
 
 #### arbre
@@ -63,7 +65,7 @@ En général :
 Somme des degrés = 2 * le nombre d'arêtes du graphe
 
 
-## problématique
+## Une vie de fourmis - problématiques
 
 ➔ représenter la fourmilière sous forme de graphe en utilisant la
 librairie/module de votre choix.

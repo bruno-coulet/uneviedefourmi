@@ -33,6 +33,8 @@ for nest in ant_nest_objects:
     G = nx.Graph()
     G.add_edges_from(nest.tubes)
     nx.draw(G, with_labels=True)
+     # titre fenêtre
+    plt.gcf().canvas.manager.set_window_title(nest.name)
     plt.show()
 
 
