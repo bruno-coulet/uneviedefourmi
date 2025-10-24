@@ -59,11 +59,11 @@ graphe **connexe** et **sans cycle**
 <img src=img/arbre_chemin.png width=200>
 <img src=img/non_arbre.png width=200>
 
-**Relation entre connexité et arbre**
+#### Relation entre connexité et arbre
 Un graphe est connexe si et seulement si il contient un arbre couvrant
 cad que si on supprime certain arête, on obtient un arbre
 
-**Somme des degrés**
+#### Somme des degrés
 En général :
 Somme des degrés = 2 * le nombre d'arêtes du graphe
 
@@ -75,15 +75,15 @@ librairie/module de votre choix.
 ➔ afficher l’ensemble des étapes nécessaires au déplacement des
 fourmis, comme montré ici :
 
-+++ E1+++
-f1 − Sv − S1
-f2 − Sv − S2
-+++E2+++
-f1 − S1 − Sd
-f2 − S2 − Sd
-f3 − Sv − S1
-+++ E3+++
-f3 − S1 − Sd
++++ E1+++<br>
+f1 − Sv − S1<br>
+f2 − Sv − S2<br>
++++E2+++<br>
+f1 − S1 − Sd<br>
+f2 − S2 − Sd<br>
+f3 − Sv − S1<br>
++++ E3+++<br>
+f3 − S1 − Sd<br>
 
 ➔ représenter par un graphique le déplacement des fourmis au sein de la
 fourmilière, étape par étape.
