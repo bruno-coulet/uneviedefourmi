@@ -31,7 +31,7 @@ etc...
 
 ---
 **cycle**
-chemein dont les 2 extremité sont relié
+chemin dont les 2 extremités sont reliées
 (boucle)
 
 <img src=img/cycle.png width=400>
@@ -68,10 +68,11 @@ En général :
 Somme des degrés = 2 * le nombre d'arêtes du graphe
 
 
-## problématique
+## problématiques du projets
 
 ➔ représenter la fourmilière sous forme de graphe en utilisant la
-librairie/module de votre choix.
+librairie/module de notre choix.
+
 ➔ afficher l’ensemble des étapes nécessaires au déplacement des
 fourmis, comme montré ici :
 
