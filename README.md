@@ -13,20 +13,24 @@ Se compose de zéro ou une arête entre chaque sommets
 |node | sommet|
 |edge | arête|
 
+---
 **voisins**
 2 sommets sont voisins s'il sont relié par une arête
 <img src=img/voisins.png width=400>
 
+---
 **degre**
 Nombre de voisin d'un sommet
 deg(sommet)=3 le sommet à 3 voisins
 
+---
 **chemin**
 nombre d'arêtes qui relient 2 sommet
 1 arête : chemin de longueur 1
 2 arêtes : chemin de longueur 2
 etc...
 
+---
 **cycle**
 chemein dont les 2 extremité sont relié
 (boucle)
@@ -35,24 +39,26 @@ chemein dont les 2 extremité sont relié
 <img src=img/cycle_3.png width=400>
 <img src=img/cycle_6.png width=400>
 
-
+---
 **Graphe complet**
 contient toutes les arêtes possibles entre tous les sommets
 
-<img src=img/graphe_complet.png width=400>
+<img src=img/graphe_complet.png width=300>
 
+---
 **Graphe connexe**
-Pour tout u et vle graphe contient un chemin entre u et v
+Pour tout ``u`` et ``v``, le graphe est connexe s'il contient un chemin entre `u` et `v`
 
-<img src=img/graphe_non_convexe.png width=400>
+<img src=img/graphe_non_convexe.png width=300>
 
+---
 **arbre**
-graphe connexe et sans cycle
+graphe **connexe** et **sans cycle**
 
-<img src=img/arbre.png width=300>
-<img src=img/arbre_etoile.png width=300>
-<img src=img/arbre_chemin.png width=300>
-<img src=img/non_arbre.png width=300>
+<img src=img/arbre.png width=200>
+<img src=img/arbre_etoile.png width=200>
+<img src=img/arbre_chemin.png width=200>
+<img src=img/non_arbre.png width=200>
 
 **Relation entre connexité et arbre**
 Un graphe est connexe si et seulement si il contient un arbre couvrant
