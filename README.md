@@ -73,6 +73,94 @@ En général :<br>
 Somme des degrés = 2 x le nombre d'arêtes du graphe
 
 
+## Veille sur les **graphes**
+
+Un **graphe** représente des relations entre des éléments appelés **sommets**.  
+Une **arête** est une relation reliant deux sommets.  
+Un graphe peut comporter zéro, une ou plusieurs arêtes entre ses sommets.
+
+| Anglais | Français |
+|----------|-----------|
+| node     | sommet    |
+| edge     | arête     |
+
+---
+
+### **Voisins**
+Deux sommets sont **voisins** s’ils sont reliés par une arête.  
+<img src="img/voisins.png" width="400">
+
+---
+
+### **Degré**
+Le **degré** d’un sommet est le nombre de ses voisins.  
+Exemple : si un sommet a 3 voisins, alors  
+`deg(sommet) = 3`
+
+---
+
+### **Chemin**
+Un **chemin** est une suite d’arêtes reliant deux sommets.  
+- 1 arête → chemin de longueur 1  
+- 2 arêtes → chemin de longueur 2  
+- etc.
+
+---
+
+### **Cycle**
+Un **cycle** est un chemin dont les deux extrémités sont reliées (on revient au point de départ).  
+
+<img src="img/cycle.png" width="400">
+<img src="img/cycle_3.png" width="400">
+<img src="img/cycle_6.png" width="400">
+
+---
+
+### **Graphe complet**
+Un **graphe complet** contient toutes les arêtes possibles entre tous les sommets.
+
+<img src="img/graphe_complet.png" width="300">
+
+---
+
+### **Graphe connexe**
+Un graphe est **connexe** si, pour tout couple de sommets `u` et `v`,  
+il existe un **chemin** reliant `u` à `v`.
+
+**Exemple :**  
+L’ensemble ci-dessous **n’est pas connexe** : il se compose de deux sous-graphes connexes,  
+celui de gauche `(A, B, C, D)` et celui de droite `(E, F)`.
+
+<img src="img/graphe_non_convexe.png" width="300">
+
+---
+
+### **Arbre**
+Un **arbre** est un graphe **connexe** et **sans cycle**.
+
+<img src="img/arbre.png" width="200">
+<img src="img/arbre_etoile.png" width="200">
+<img src="img/arbre_chemin.png" width="200">
+<img src="img/non_arbre.png" width="200">
+
+---
+
+### **Relation entre connexité et arbre**
+Un graphe est **connexe si et seulement s’il admet au moins un arbre couvrant**,  
+c’est-à-dire un **sous-graphe connexe, sans cycle, contenant tous les sommets**.
+
+> À partir d’un graphe connexe, on peut supprimer des arêtes (avec soin) pour obtenir un arbre couvrant — mais pas n’importe lesquelles.
+
+---
+
+### **Somme des degrés**
+En général :  
+> Somme des degrés = 2 × (nombre d’arêtes du graphe)
+
+
+
+
+
 ## problématiques du projets
 
 ➔ représenter la fourmilière sous forme de graphe en utilisant la
