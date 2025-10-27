@@ -3,78 +3,6 @@ Algorithmique, python, graphs, NetworkX
 
 ## Veille sur les **graphes**
 
-Représente des relations entre des éléments (sommets)
-Arête = relation entre 2 sommets
-Se compose de zéro ou une arête entre chaque sommets
-
-|Anglais|Français|
-|-|-|
-|node | sommet|
-|edge | arête|
-
----
-**voisins**<br>
-2 sommets sont voisins s'il sont relié par une arête<br>
-<img src=img/voisins.png width=400>
-
----
-**degre**<br>
-Nombre de voisins d'un sommet<br>
-si le sommet à 3 voisins, alors :<br>
-deg(sommet) = 3
-
----
-**chemin**<br>
-nombre d'arêtes qui relient 2 sommet<br>
-1 arête : chemin de longueur 1<br>
-2 arêtes : chemin de longueur 2<br>
-etc...
-
----
-**cycle**<br>
-chemin dont les 2 extremités sont reliées<br>
-(boucle)
-
-<img src=img/cycle.png width=400>
-<img src=img/cycle_3.png width=400>
-<img src=img/cycle_6.png width=400>
-
----
-**Graphe complet**<br>
-contient toutes les arêtes possibles entre tous les sommets
-
-<img src=img/graphe_complet.png width=300>
-
----
-**Graphe connexe**<br>
-Un graph est connexe si, pour tout sommets `u` et `v`<br>
-il contient un chemin entre `u` et `v`
-
-**L'ensemble ci-dessous n'est pas connexe**, il se compose de 2 graphs connnexes, celui à gauche (A, D,C ,F)et celui à doite (E, F)
-<img src=img/graphe_non_convexe.png width=300>
-
----
-**arbre**<br>
-graphe **connexe** et **sans cycle**
-
-<img src=img/arbre.png width=200>
-<img src=img/arbre_etoile.png width=200>
-<img src=img/arbre_chemin.png width=200>
-<img src=img/non_arbre.png width=200>
-
-#### Relation entre connexité et arbre
-Un graphe est connexe si et seulement s’il admet au moins un arbre couvrant<br>
-(c’est-à-dire un sous-graphe connexe, sans cycle, contenant tous les sommets).
-
-À partir d’un graphe connexe, on peut supprimer des arêtes (avec soin) pour obtenir un arbre couvrant — mais pas n’importe lesquelles.
-
-#### Somme des degrés
-En général :<br>
-Somme des degrés = 2 x le nombre d'arêtes du graphe
-
-
-## Veille sur les **graphes**
-
 Un **graphe** représente des relations entre des éléments appelés **sommets**.  
 Une **arête** est une relation reliant deux sommets.  
 Un graphe peut comporter zéro, une ou plusieurs arêtes entre ses sommets.
@@ -129,7 +57,7 @@ il existe un **chemin** reliant `u` à `v`.
 
 **Exemple :**  
 L’ensemble ci-dessous **n’est pas connexe** : il se compose de deux sous-graphes connexes,  
-celui de gauche `(A, B, C, D)` et celui de droite `(E, F)`.
+celui de gauche `(A, C, D, F)` et celui de droite `(E, B)`.
 
 <img src="img/graphe_non_convexe.png" width="300">
 
