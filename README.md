@@ -13,7 +13,7 @@ Se compose de zéro ou une arête entre chaque sommets
 |edge | arête|
 
 ---
-**voisins**
+**voisins**<br>
 2 sommets sont voisins s'il sont relié par une arête<br>
 <img src=img/voisins.png width=400>
 
