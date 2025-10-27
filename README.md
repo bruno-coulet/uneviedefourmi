@@ -63,8 +63,10 @@ graphe **connexe** et **sans cycle**
 <img src=img/non_arbre.png width=200>
 
 #### Relation entre connexité et arbre
-Un graphe est connexe si et seulement si il contient un arbre couvrant
-cad que si on supprime une ou des arêtes, on obtient un arbre
+Un graphe est connexe si et seulement s’il admet au moins un arbre couvrant<br>
+(c’est-à-dire un sous-graphe connexe, sans cycle, contenant tous les sommets).
+
+À partir d’un graphe connexe, on peut supprimer des arêtes (avec soin) pour obtenir un arbre couvrant — mais pas n’importe lesquelles.
 
 #### Somme des degrés
 En général :<br>
