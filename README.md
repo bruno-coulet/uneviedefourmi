@@ -18,7 +18,7 @@ Se compose de zéro ou une arête entre chaque sommets
 <img src=img/voisins.png width=400>
 
 ---
-**degre**
+**degre**<br>
 Nombre de voisin d'un sommet<br>
 si le sommet à 3 voisins, alors :<br<
 deg(sommet) = 3
