@@ -14,7 +14,7 @@ Se compose de zéro ou une arête entre chaque sommets
 
 ---
 **voisins**
-2 sommets sont voisins s'il sont relié par une arête
+2 sommets sont voisins s'il sont relié par une arête<br>
 <img src=img/voisins.png width=400>
 
 ---
