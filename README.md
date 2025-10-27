@@ -19,20 +19,20 @@ Se compose de zéro ou une arête entre chaque sommets
 
 ---
 **degre**<br>
-Nombre de voisin d'un sommet<br>
+Nombre de voisins d'un sommet<br>
 si le sommet à 3 voisins, alors :<br<
 deg(sommet) = 3
 
 ---
-**chemin**
-nombre d'arêtes qui relient 2 sommet
-1 arête : chemin de longueur 1
-2 arêtes : chemin de longueur 2
+**chemin**<br>
+nombre d'arêtes qui relient 2 sommet<br>
+1 arête : chemin de longueur 1<br>
+2 arêtes : chemin de longueur 2<br>
 etc...
 
 ---
-**cycle**
-chemin dont les 2 extremités sont reliées
+**cycle**<br>
+chemin dont les 2 extremités sont reliées<br>
 (boucle)
 
 <img src=img/cycle.png width=400>
@@ -40,14 +40,15 @@ chemin dont les 2 extremités sont reliées
 <img src=img/cycle_6.png width=400>
 
 ---
-**Graphe complet**
+**Graphe complet**<br>
 contient toutes les arêtes possibles entre tous les sommets
 
 <img src=img/graphe_complet.png width=300>
 
 ---
-**Graphe connexe**
-Un graph est connexe si, pour tout sommets `u` et `v`, il contient un chemin entre `u` et `v`
+**Graphe connexe**<br>
+Un graph est connexe si, pour tout sommets `u` et `v`<br>
+il contient un chemin entre `u` et `v`
 
 **L'ensemble ci-dessous n'est pas connexe**, il se compose de 2 graphs connnexes, celui à gauche (A, D,C ,F)et celui à doite (E, F)
 <img src=img/graphe_non_convexe.png width=300>
