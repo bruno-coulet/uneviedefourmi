@@ -73,6 +73,22 @@ Un **arbre** est un graphe **connexe** et **sans cycle**.
 
 ---
 
+### **Arbre couvrant**
+Un arbre couvrant (ou spanning tree en anglais) d’un graphe connexe, c’est :
+
+un sous-graphe qui contient tous les sommets du graphe,
+sans cycle, et suffisamment d’arêtes pour rester connexe.
+
+Autrement dit :
+
+il “couvre” tous les sommets (rien n’est oublié)
+
+il relie tout le monde (donc connexe)
+
+mais sans cycle (aucune redondance inutile)
+
+---
+
 ### **Relation entre connexité et arbre**
 Un graphe est **connexe si et seulement s’il admet au moins un arbre couvrant**,  
 c’est-à-dire un **sous-graphe connexe, sans cycle, contenant tous les sommets**.
