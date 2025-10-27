@@ -100,7 +100,8 @@ En général :
 > Somme des degrés = 2 × (nombre d’arêtes du graphe)
 
 
-
+---
+---
 
 
 ## problématiques du projets
