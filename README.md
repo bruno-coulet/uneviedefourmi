@@ -19,8 +19,9 @@ Se compose de zéro ou une arête entre chaque sommets
 
 ---
 **degre**
-Nombre de voisin d'un sommet
-deg(sommet)=3 le sommet à 3 voisins
+Nombre de voisin d'un sommet<br>
+si le sommet à 3 voisins, alors :<br<
+deg(sommet) = 3
 
 ---
 **chemin**
