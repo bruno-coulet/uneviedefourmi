@@ -54,7 +54,7 @@ il contient un chemin entre `u` et `v`
 <img src=img/graphe_non_convexe.png width=300>
 
 ---
-**arbre**
+**arbre**<br>
 graphe **connexe** et **sans cycle**
 
 <img src=img/arbre.png width=200>
@@ -67,7 +67,7 @@ Un graphe est connexe si et seulement si il contient un arbre couvrant
 cad que si on supprime une ou des arêtes, on obtient un arbre
 
 #### Somme des degrés
-En général :
+En général :<br>
 Somme des degrés = 2 x le nombre d'arêtes du graphe
 
 
