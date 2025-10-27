@@ -46,8 +46,9 @@ contient toutes les arêtes possibles entre tous les sommets
 
 ---
 **Graphe connexe**
-Pour tout ``u`` et ``v``, le graphe est connexe s'il contient un chemin entre `u` et `v`
+Un graph est connexe si, pour tout sommets `u` et `v`, il contient un chemin entre `u` et `v`
 
+**L'ensemble ci-dessous n'est pas connexe**, il se compose de 2 graphs connnexes, celui à gauche (A, D,C ,F)et celui à doite (E, F)
 <img src=img/graphe_non_convexe.png width=300>
 
 ---
