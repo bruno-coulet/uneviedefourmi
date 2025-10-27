@@ -62,11 +62,11 @@ graphe **connexe** et **sans cycle**
 
 #### Relation entre connexité et arbre
 Un graphe est connexe si et seulement si il contient un arbre couvrant
-cad que si on supprime certain arête, on obtient un arbre
+cad que si on supprime une ou des arêtes, on obtient un arbre
 
 #### Somme des degrés
 En général :
-Somme des degrés = 2 * le nombre d'arêtes du graphe
+Somme des degrés = 2 x le nombre d'arêtes du graphe
 
 
 ## problématiques du projets
@@ -77,15 +77,15 @@ librairie/module de notre choix.
 ➔ afficher l’ensemble des étapes nécessaires au déplacement des
 fourmis, comme montré ici :
 
-+++ E1+++<br>
-f1 − Sv − S1<br>
-f2 − Sv − S2<br>
-+++E2+++<br>
-f1 − S1 − Sd<br>
-f2 − S2 − Sd<br>
-f3 − Sv − S1<br>
-+++ E3+++<br>
-f3 − S1 − Sd<br>
++++ E1+++
+f1 − Sv − S1
+f2 − Sv − S2
++++E2+++
+f1 − S1 − Sd
+f2 − S2 − Sd
+f3 − Sv − S1
++++ E3+++
+f3 − S1 − Sd
 
 ➔ représenter par un graphique le déplacement des fourmis au sein de la
 fourmilière, étape par étape.
@@ -156,13 +156,19 @@ main.py          # Fonction principale et tests
 
 ### 🚀 **Utilisation**
 
-#### Interface principale (RECOMMANDÉ)
+#### Interface graphique (RECOMMANDÉ)
+Pour lancer l'interface graphique, utiliser la commande suivante :
 ```shell
-uv run python main.py
+uv run launcher.py
+```
+
+#### Interface ligne de commande
+```shell
+uv run main.py
 ```
 
 **Options disponibles :**
-1. **🎬 Animation personnalisée** (RECOMMANDÉ)
+1. **🎬 Animation personnalisée** 
    - Choix parmi les 6 fourmilières disponibles
    - Animation temps réel interactive OU animation étape par étape  
    - Contrôle de la vitesse d'animation
@@ -170,26 +176,16 @@ uv run python main.py
 2. **📊 Test complet** - Analyse de toutes les fourmilières
 3. **🎨 Visualisation statique** - Exemple simple sans animation
 
+
 #### Animations directes
 
 **Animation temps réel :**
 ```shell
-uv run python anime.py
+uv run anime.py
 ```
 - 6 fourmilières au choix
 - Animation fluide en temps réel
 - Contrôle de vitesse (lent, normal, rapide)
-
-**Animation avancée :**
-```shell  
-uv run python -c "from animation import demo_animation; demo_animation()"
-```
-
-#### Démonstration complète
-```shell
-uv run python demo.py        # Démonstration complète
-uv run python demo.py quick  # Démonstration rapide
-```
 
 ### 📈 **Algorithme détaillé**
 
@@ -207,7 +203,6 @@ uv run python demo.py quick  # Démonstration rapide
 - Une fourmi par tunnel par étape
 - Déplacement simultané de toutes les fourmis
 
-## conclusion
 
 ### 🎯 **Objectifs atteints**
 
@@ -258,3 +253,5 @@ uv run python demo.py quick  # Démonstration rapide
 > Notre algorithme simule cette intelligence collective : à chaque "tour", toutes les fourmis regardent où elles peuvent aller et choisissent le meilleur mouvement. C'est comme un GPS qui recalcule en permanence le meilleur itinéraire !
 >
 > **Résultat :** Même avec 50 fourmis dans un réseau complexe de 14 salles, elles arrivent toutes à destination en seulement 11 étapes - un exploit de coordination remarquable ! 🐜✨
+
+
