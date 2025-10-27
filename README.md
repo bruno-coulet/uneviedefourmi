@@ -79,15 +79,15 @@ librairie/module de notre choix.
 ➔ afficher l’ensemble des étapes nécessaires au déplacement des
 fourmis, comme montré ici :
 
-+++ E1+++
-f1 − Sv − S1
-f2 − Sv − S2
-+++E2+++
-f1 − S1 − Sd
-f2 − S2 − Sd
-f3 − Sv − S1
-+++ E3+++
-f3 − S1 − Sd
++++ E1+++<br>
+f1 − Sv − S1<br>
+f2 − Sv − S2<br>
++++E2+++<br>
+f1 − S1 − Sd<br>
+f2 − S2 − Sd<br>
+f3 − Sv − S1<br>
++++ E3+++<br>
+f3 − S1 − Sd<br>
 
 ➔ représenter par un graphique le déplacement des fourmis au sein de la
 fourmilière, étape par étape.
