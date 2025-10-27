@@ -20,7 +20,7 @@ Se compose de zéro ou une arête entre chaque sommets
 ---
 **degre**<br>
 Nombre de voisins d'un sommet<br>
-si le sommet à 3 voisins, alors :<br<
+si le sommet à 3 voisins, alors :<br>
 deg(sommet) = 3
 
 ---
