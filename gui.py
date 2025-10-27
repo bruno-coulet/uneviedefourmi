@@ -888,25 +888,25 @@ class FourmiGUI:
         notebook = ttk.Notebook(self.root)
         notebook.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         
-        # Onglet 1: Animation
+        # Onglet 1: Documentation de l'algorithme (en premier)
+        self.documentation_frame = ttk.Frame(notebook)
+        notebook.add(self.documentation_frame, text="📖 Documentation")
+        self.setup_documentation_tab()
+        
+        # Onglet 2: Animation
         self.animation_frame = ttk.Frame(notebook)
         notebook.add(self.animation_frame, text="🎬 Animation")
         self.setup_animation_tab()
         
-        # Onglet 2: Analyse complète
+        # Onglet 3: Analyse complète
         self.analysis_frame = ttk.Frame(notebook)
-        notebook.add(self.analysis_frame, text="Analyse")
+        notebook.add(self.analysis_frame, text="📊 Analyse")
         self.setup_analysis_tab()
         
-        # Onglet 3: Générateur de fourmilières
+        # Onglet 4: Générateur de fourmilières
         self.generator_frame = ttk.Frame(notebook)
         notebook.add(self.generator_frame, text="🎲 Générateur")
         self.setup_generator_tab()
-        
-        # Onglet 4: Documentation de l'algorithme
-        self.documentation_frame = ttk.Frame(notebook)
-        notebook.add(self.documentation_frame, text="📖 Documentation")
-        self.setup_documentation_tab()
         
         # Barre de statut
         self.setup_status_bar()
